@@ -24,13 +24,13 @@ public <List> listarAula(){
 }
 
 //Aquí recogemos un aula
-public <List> listarAula(){
-    return aulaRepository.find(aula);
+public <List> listarAulaId(){
+    return aulaRepository.findById(aula);
 }
 
 //Aquí eliminamos un aula
 public void borrarAula(Aula aula){
-    aulaRepository.delete(aula);
+    aulaRepository.deleteById(id);
 }
 
 
